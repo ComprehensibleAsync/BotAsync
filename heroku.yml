@@ -1,3 +1,6 @@
 build:
   docker:
     worker: dockerfile
+run:
+  worker: bash run.sh
+  image: worker
