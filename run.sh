@@ -9,8 +9,8 @@ while true; do
         git-try-pull
         let FAIL=0
     fi
-        python .server.py
-        node .server.js
+        python server.py
+        python server2.py
         EXIT=${?}
     if [ ${EXIT} -ne 0 ]; then
          let FAIL=${FAIL}+1
